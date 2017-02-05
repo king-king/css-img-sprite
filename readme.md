@@ -63,6 +63,8 @@
 
 * EXAMPLE
 ```javascript
+var fs = require( 'fs' ) ,
+	sprite = require( 'css-img-sprite' ).raw;
 fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	var time = new Date();
 	if ( err ) {
@@ -84,4 +86,4 @@ fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	}
 } );
 ```
-> you can run test/test1.js to see result
+> you can run test/raw.js to see result

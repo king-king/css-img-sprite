@@ -1,10 +1,8 @@
 /**
  * Created by king-king on 2017/2/5.
  */
-var fs = require( 'fs' );
-var sprite = require( '../index' );
-
-
+var fs = require( 'fs' ) ,
+	sprite = require( '../index' ).raw;
 fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	var time = new Date();
 	if ( err ) {
