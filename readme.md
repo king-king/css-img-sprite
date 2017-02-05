@@ -61,7 +61,7 @@
  **/
 ```
 
-*EXAMPLE
+* EXAMPLE
 ```javascript
 fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	var time = new Date();
