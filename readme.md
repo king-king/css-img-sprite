@@ -7,7 +7,8 @@
  *      obj:{object}
  *          obj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
  *          [obj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,
- *                                             you need do it yourself.we need it because we need to change css background-image:url()
+ *                                             you need do it yourself.we need it because we need to change
+  *                                             css background-image:url()
  *          [obj.imgDesDir]:{string} image output dir,default:cssSrc
  *          [obj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
  *          [obj.hash]:{boolean} add hash flag on sprite image
@@ -16,6 +17,8 @@
  *
  **/
 ```
+
+#useage
 
 #example
 ```javascript
@@ -40,3 +43,4 @@ fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	}
 } );
 ```
+> you can run test/test1.js to see result
