@@ -3,11 +3,11 @@
 
 
 # RUNNERS
-* Gulp:[gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
+* Gulp : [gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
 
 
 # HOW TO WRITE CSS
-* add '?__spriter'or'?__sprite' at the end of url to do sprite:
+* add **'?__sprite'** or **'?__spriter'** at the end of url to do sprite:
 ```css
 .image {
     width: 70px;
@@ -32,7 +32,7 @@
  }
  ```
  
- * you can write css like this:
+* you can write css like this:
   ```css
   .image {
       width: 70px;
@@ -62,7 +62,7 @@
  *          spriteObj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
  *          [spriteObj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,
  *                                             you need do it yourself.we need it because we need to change
-  *                                             css background-image:url()
+ *                                             css background-image:url()
  *          [spriteObj.imgDesDir]:{string} image output dir,default:cssSrc
  *          [spriteObj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
  *          [spriteObj.hash]:{boolean} add hash flag on sprite image
