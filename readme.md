@@ -18,7 +18,9 @@
  **/
 ```
 
-#useage
+#USEAGE
+
+## HOW TO WRITE CSS
 * add '?__spriter'or'?__sprite' at the end of url to do sprite:
 ```css
 .image {
@@ -60,7 +62,7 @@
    }
 ```
 
-#example
+##HOW TO WRITE JS 
 ```javascript
 fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 	var time = new Date();
