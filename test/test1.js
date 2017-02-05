@@ -1,15 +1,23 @@
 /**
- * Created by king-king on 2017/2/4.
+ * Created by king-king on 2017/2/5.
  */
-var sprite = require('../index');
-var gulp = require("gulp");
+var fs = require( 'fs' );
+var sprite = require( '../index' );
 
-var outDir = "build";
 
-gulp.src("css/**/*.css")
-    .pipe(sprite({
-        cssDesDir: outDir,
-        imgDesDir: "build/image",
-        hash: true
-    }))
-    .pipe(gulp.dest(outDir));
+fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
+	if ( err ) {
+		console.log( err );
+	} else {
+		var content = sprite( buffer , {
+			cssSrc : 'css/base1/base.css' ,
+			cssDesDir : 'out' ,
+			imgDesDir : 'out'
+		} );
+		fs.writeFile( 'out/result.css' , content , function ( err ) {
+			if ( err ) {
+				console.log( err );
+			}
+		} );
+	}
+} );

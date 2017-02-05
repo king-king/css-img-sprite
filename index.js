@@ -18,4 +18,4 @@ var sprite = require( "./lib/css-img-sprite" );
  *
  **/
 
-module.export = sprite;
+module.exports = sprite;
