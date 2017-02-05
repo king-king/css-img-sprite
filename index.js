@@ -1,41 +1,21 @@
 /**
- * Created by king-king on 2017/1/17.
+ * Created by king-king on 2017/2/5.
  */
 
-var through = require('through2');
-var gutil = require('gulp-util');
-var PluginError = gutil.PluginError;
-var pluginName = 'gulp-css-img-sprite';
-var css_img_sprite = require('./lib/css-img-sprite');
-var path = require('path');
+var sprite = require( "./lib/css-img-sprite" );
 
-module.exports = function (obj) {
-    return through.obj(function (file, encoding, cb) {
-        if (file.isStream()) {
-            this.emit('error', new PluginError(pluginName, 'Streams are not supported!'));
-            return cb();
-        }
+/**
+ *  arguments:
+ *      content:{buffer} css file content
+ *      obj:{object}
+ *          obj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
+ *          [obj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,you need do it yourself.we need it because we need to change css background-image:url()
+ *          [obj.imgDesDir]:{string} image output dir,default:cssSrc
+ *          [obj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
+ *          [obj.hash]:{boolean} add hash flag on sprite image
+ *  return:
+ *      content:{buffer} new css file content
+ *
+ **/
 
-        if (file.isBuffer()) {
-            try {
-                var content = css_img_sprite(file.contents.toString(), {
-                    cssDes: path.dirname(path.join(obj.cssDesDir, file.relative)),
-                    imgDes: obj.imgDesDir,
-                    cssSrc: file.path,
-                    layout: obj.layout,
-                    hash: obj.hash
-                });
-                file.contents = Buffer.from(content);
-            } catch (err) {
-                this.emit('error', new PluginError(pluginName, err.toString()));
-                return cb();
-            }
-        }
-
-        // make sure the file goes through the next gulp plugin
-        this.push(file);
-
-        // tell the stream engine that we are done with this file
-        cb();
-    });
-};
+module.export = sprite;
