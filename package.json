@@ -8,19 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/king-king/gulp-css-img-sprite.git"
+    "url": "git+https://github.com/king-king/css-img-sprite.git"
   },
   "keywords": [
-    "gulpplugin",
     "css",
     "sprite"
   ],
   "author": "king-king",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/king-king/gulp-css-img-sprite/issues"
+    "url": "https://github.com/king-king/css-img-sprite/issues"
   },
-  "homepage": "https://github.com/king-king/gulp-css-img-sprite#readme",
+  "homepage": "https://github.com/king-king/css-img-sprite#readme",
   "dependencies": {
     "images": "^3.0.0"
   }
