@@ -33,7 +33,7 @@
  ```
  
 * you can write css like this:
-  ```css
+ ```css
   .image {
       width: 70px;
       background: url("test/image/2.png?__spriter") repeat-x 0 200px;
