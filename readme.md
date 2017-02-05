@@ -51,9 +51,9 @@
 #HOW TO WRITE JS 
 
 * API:
-1.raw ( content , spriteObj )
-2.sprite ( spriteObj , callback )
-3.spriteSync ( spriteObj )
+1. raw ( content , spriteObj )
+2. sprite ( spriteObj , callback )
+3. spriteSync ( spriteObj )
 ```javascript
 /**
  *  arguments:
