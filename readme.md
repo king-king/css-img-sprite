@@ -1,3 +1,11 @@
+# INSTALL
+> npm install css-img-sprite
+
+
+# RUNNERS
+* Gulp:[gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
+
+
 # HOW TO WRITE CSS
 * add '?__spriter'or'?__sprite' at the end of url to do sprite:
 ```css
@@ -43,47 +51,28 @@
 #HOW TO WRITE JS 
 
 * API:
+1.raw ( content , spriteObj )
+2.sprite ( spriteObj , callback )
+3.spriteSync ( spriteObj )
 ```javascript
 /**
  *  arguments:
  *      content:{buffer} css file content
- *      obj:{object}
- *          obj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
- *          [obj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,
+ *      spriteObj:{object}
+ *          spriteObj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
+ *          [spriteObj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,
  *                                             you need do it yourself.we need it because we need to change
   *                                             css background-image:url()
- *          [obj.imgDesDir]:{string} image output dir,default:cssSrc
- *          [obj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
- *          [obj.hash]:{boolean} add hash flag on sprite image
+ *          [spriteObj.imgDesDir]:{string} image output dir,default:cssSrc
+ *          [spriteObj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
+ *          [spriteObj.hash]:{boolean} add hash flag on sprite image
+ *      callback:{function} callback(err)
  *  return:
  *      content:{buffer} new css file content
  *
  **/
 ```
+> **raw** is a low level api.you need to read css content and write new css file. 
 
 * EXAMPLE
-```javascript
-var fs = require( 'fs' ) ,
-	sprite = require( 'css-img-sprite' ).raw;
-fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
-	var time = new Date();
-	if ( err ) {
-		console.log( err );
-	} else {
-		var content = sprite( buffer , {
-			cssSrc : 'css/base1/base.css' ,
-			cssDesDir : 'out' ,
-			imgDesDir : 'out' ,
-			hash : true
-		} );
-		fs.writeFile( 'out/result.css' , content , function ( err ) {
-			if ( err ) {
-				console.log( err );
-			} else {
-				console.log( 'finished ,spend ' + (new Date() - time) + 'ms' )
-			}
-		} );
-	}
-} );
-```
-> you can run test/raw.js to see result
+> you can see the usage in test folder
