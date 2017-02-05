@@ -35,7 +35,7 @@ module.exports.sprite = function ( spriteObj , callback ) {
 					path.join( curWorkingDir , spriteObj.cssDesDir ) :
 					path.join( curWorkingDir , path.dirname( spriteObj.cssSrc ) ) ,
 				baseName = path.basename( spriteObj.cssSrc );
-			fs.writeFile( cssRealOut + baseName , content , function ( err ) {
+			fs.writeFile( path.join( cssRealOut , baseName ) , content , function ( err ) {
 				if ( err ) {
 					callback( err );
 				} else {
@@ -54,5 +54,5 @@ module.exports.spriteSync = function ( spriteObj ) {
 			path.join( curWorkingDir , spriteObj.cssDesDir ) :
 			path.join( curWorkingDir , path.dirname( spriteObj.cssSrc ) ) ,
 		baseName = path.basename( spriteObj.cssSrc );
-	fs.writeFileSync( cssRealOut + baseName , content );
+	fs.writeFileSync( path.join( cssRealOut , baseName ) , content );
 };

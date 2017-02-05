@@ -9,7 +9,7 @@ fs.readFile( 'css/base1/base.css' , function ( err , buffer ) {
 		console.log( err );
 	} else {
 		var content = sprite( buffer , {
-			cssSrc : 'css/base1/base.css' ,
+			cssSrc : 'css/base1/base.css' , // important
 			cssDesDir : 'out' ,
 			imgDesDir : 'out' ,
 			hash : true
