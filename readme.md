@@ -1,4 +1,17 @@
-# 代码功能调整纪录
-1. 不支持https和http
-2. 添加?__sprite和?__spriter的后缀支持
-3. 当repeat-x或repeat-y与background-size同时出现时，会出现不生成合成图的bug
+#API
+
+```javascript
+/**
+ *  arguments:
+ *      content:{buffer} css file content
+ *      obj:{object}
+ *          obj.cssSrc:{string} although you give content,we still need file name,so,give us cssSrc
+ *          [obj.cssDesDir]:{string} css output dir ,default:cssSrc.we do not write new css file for you,you need do it yourself.we need it because we need to change css background-image:url()
+ *          [obj.imgDesDir]:{string} image output dir,default:cssSrc
+ *          [obj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
+ *          [obj.hash]:{boolean} add hash flag on sprite image
+ *  return:
+ *      content:{buffer} new css file content
+ *
+ **/
+```
