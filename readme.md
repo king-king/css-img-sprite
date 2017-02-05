@@ -21,8 +21,8 @@
  images into one output image.
   
 * you can not use repeat,repeat-x or repeat-y with scale!=1,for example: you scale
- the image 2 times and you use repeat-x,so although you add '?__spriter',we will
- not generate sprite image.
+ the image 2 times and you also use repeat-x,as a result, although you add '?__spriter',you will
+ not get sprite image.
  ```css
  .image {
      width: 70px;
@@ -75,4 +75,5 @@
 > **raw** is a low level api.you need to read css content and write new css file. 
 
 * EXAMPLE
+
 > you can see the usage in test folder
