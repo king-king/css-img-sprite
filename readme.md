@@ -19,6 +19,46 @@
 ```
 
 #useage
+* add '?__spriter'or'?__sprite' at the end of url to do sprite:
+```css
+.image {
+    width: 70px;
+    background: url("test/image/2.png?__spriter") 0 200px;
+    background-size: 70px auto;
+    height: 10px;
+}
+```
+
+* you can scale the image by set background-size.we can generate the same scale
+ images into one output image.
+  
+* you can not use repeat,repeat-x or repeat-y with scale!=1,for example: you scale
+ the image 2 times and you use repeat-x,so although you add '?__spriter',we will
+ not generate sprite image.
+ ```css
+ .image {
+     width: 70px;
+     background: url("test/image/2.png?__spriter") repeat-x 0 200px;
+     background-size: 140px auto;
+     height: 10px;
+ }
+ ```
+ 
+ * you can write css like this:
+  ```css
+  .image {
+      width: 70px;
+      background: url("test/image/2.png?__spriter") repeat-x 0 200px;
+      background-size: 70px auto;
+      height: 10px;
+  }
+  /*or*/
+   .image2 {
+       width: 70px;
+       background: url("test/image/2.png?__spriter") repeat-x 0 200px;
+       height: 10px;
+   }
+```
 
 #example
 ```javascript
