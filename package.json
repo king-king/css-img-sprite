@@ -1,7 +1,7 @@
 {
-  "name": "gulp-css-img-sprite",
+  "name": "css-img-sprite",
   "version": "1.0.0",
-  "description": "输入css文件，自动生成精灵图和新的css文件",
+  "description": "input css file,get new file and sprite image",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
