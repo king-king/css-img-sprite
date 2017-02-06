@@ -1,12 +1,21 @@
-# INSTALL
+# TABLE
+1. [Install](#INSTALL)
+1. [Gulp Version](#Gulp Version)
+1. [How To Write CSS](#How To Write CSS)
+1. [How To Write JS](#How To Write JS)
+1. [Example](#Example)
+
+
+
+# Install
 > npm install css-img-sprite
 
 
-# RUNNERS
+# Gulp Version
 * Gulp : [gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
 
 
-# HOW TO WRITE CSS
+# How To Write CSS
 * add **'?__sprite'** or **'?__spriter'** at the end of url to do sprite:
 ```css
 .image {
@@ -48,12 +57,12 @@
    }
 ```
 
-#HOW TO WRITE JS 
+#How To Write JS 
 
 * API:
-1. **raw ( content , spriteObj )**
-1. **sprite ( spriteObj , callback )**
-1. **spriteSync ( spriteObj )**
+    1. **raw ( content , spriteObj )**
+    1. **sprite ( spriteObj , callback )**
+    1. **spriteSync ( spriteObj )**
 ```javascript
 /**
  *  arguments:
@@ -74,6 +83,6 @@
 ```
 > **raw** is a low level api.you need to read css content and write new css file. 
 
-* EXAMPLE
+* Example
 
 > you can see the usage in test folder
