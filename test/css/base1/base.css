@@ -7,20 +7,20 @@
     border: 3px solid black;
 }
 
-/*.image2 {*/
-    /*margin: 10px;*/
-    /*width: 50px;*/
-    /*background: url("../../image/bag.png?__spriter") repeat-x 0 0;*/
-    /*background-size: 50px auto;*/
-    /*height: 50px;*/
-    /*border: 3px solid black;*/
-/*}*/
+.image2 {
+    margin: 10px;
+    width: 50px;
+    background: url("../../image/bag.png?__spriter") repeat-x 0 0;
+    background-size: 50px auto;
+    height: 50px;
+    border: 3px solid black;
+}
 
-/*.image3 {*/
-    /*margin: 10px;*/
-    /*width: 44px;*/
-    /*background: url("../../image/shop.png?__spriter") 0 0;*/
-    /*background-size: 44px auto;*/
-    /*height: 44px;*/
-    /*border: 3px solid black;*/
-/*}*/
+.image3 {
+    margin: 10px;
+    width: 44px;
+    background: url("../../image/shop.png?__spriter") 0 0;
+    background-size: 44px auto;
+    height: 44px;
+    border: 3px solid black;
+}
