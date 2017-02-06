@@ -55,18 +55,18 @@ after sprite:
  ```
  you can write css like this:
  ```css
-  .image {
-      width: 70px;
-      background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
-      background-size: 50px auto;
-      height: 10px;
-  }
-  /*or*/
-   .image2 {
-       width: 70px;
-       background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
-       height: 10px;
-   }
+.image {
+    width: 70px;
+    background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
+    background-size: 50px auto;
+    height: 10px;
+}
+/*or*/
+.image2 {
+    width: 70px;
+    background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
+    height: 10px;
+}
 ```
 
 * you can use auto to set background-size
