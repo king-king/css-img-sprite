@@ -18,6 +18,7 @@ shop:
 ![shop](test/image/shop.png)
 bag:
 ![shop](test/image/bag.png)
+
 * add **'?__sprite'** or **'?__spriter'** at the end of url to do sprite:
 ```css
 .image1 {
@@ -35,9 +36,10 @@ bag:
     border: 3px solid black;
 }
 ```
+after sprite:
+![after](test/image/base_f4aff81c22_z.png)
 
-
-* you can scale the image by set background-size.we can generate the same scale
+* you can scale the image by set background-size.we can put the same scale
  images into one output image.
   
 * you can not use repeat,repeat-x or repeat-y with scale!=1,for example: you scale
@@ -46,26 +48,43 @@ bag:
  ```css
  .image {
      width: 70px;
-     background: url("test/image/2.png?__spriter") repeat-x 0 200px;
-     background-size: 140px auto;
+     background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
+     background-size: 100px auto;
      height: 10px;
  }
  ```
- 
-* you can write css like this:
+ you can write css like this:
  ```css
   .image {
       width: 70px;
-      background: url("test/image/2.png?__spriter") repeat-x 0 200px;
-      background-size: 70px auto;
+      background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
+      background-size: 50px auto;
       height: 10px;
   }
   /*or*/
    .image2 {
        width: 70px;
-       background: url("test/image/2.png?__spriter") repeat-x 0 200px;
+       background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
        height: 10px;
    }
+```
+
+* you can use auto to set background-size
+```css
+.image1 {
+    background: url("test/image/bag.png?__sprite") 0 0;
+    background-size: auto 50px;
+}
+/* or */
+.image1 {
+    background: url("test/image/bag.png?__sprite") 0 0;
+    background-size: 50px 50px;
+}
+/* or */
+.image1 {
+    background: url("test/image/bag.png?__sprite") 0 0;
+    background-size: auto auto;
+}
 ```
 
 # <a name="How To Write JS">How To Write JS</a>
