@@ -2,7 +2,7 @@
     margin: 10px;
     width: 100px;
     height: 30px;
-    background: url("../../image/1.png?__spriter") 0 0;
+    background: url("../../image/1.png?__spriter") repeat-x 0 0;
     background-size: 100px auto;
     border: 3px solid black;
 }
@@ -10,8 +10,8 @@
 .image2 {
     margin: 10px;
     width: 50px;
-    background: url("../../image/bag.png?__spriter") 0 0;
-    background-size: 50px auto;
+    background: url("../../image/bag.png?__spriter") repeat-x 0 0;
+    /*background-size: 50px auto;*/
     height: 50px;
     border: 3px solid black;
 }
