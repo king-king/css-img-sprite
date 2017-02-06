@@ -7,15 +7,13 @@
 
 
 
-# Install
+# <a name="Install">Install</a>
 > npm install css-img-sprite
 
-
-# Gulp Version
+# <a name="Gulp Version">Gulp Version</a>
 * Gulp : [gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
 
-
-# How To Write CSS
+# <a name="How To Write CSS">How To Write CSS</a>
 * add **'?__sprite'** or **'?__spriter'** at the end of url to do sprite:
 ```css
 .image {
@@ -57,7 +55,7 @@
    }
 ```
 
-#How To Write JS 
+# <a name="How To Write JS">How To Write JS</a>
 
 * API:
     1. **raw ( content , spriteObj )**
@@ -85,6 +83,6 @@
 ```
 > **raw** is a low level api.you need to read css content and write new css file. 
 
-* Example
+# <a name="Example">Example</a>
 
 > you can see the usage in test folder
