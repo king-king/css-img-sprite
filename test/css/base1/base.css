@@ -1,22 +1,26 @@
 .image1 {
+    margin: 10px;
     width: 100px;
     height: 30px;
-    filter: blur(10px);
-    transform: translate3d(0, 0, 0);
-    background: url("../../image/1.png?__spriter") 100px 0;
+    background: url("../../image/1.png?__spriter") 0 0;
     background-size: 100px auto;
+    border: 3px solid black;
 }
 
 .image2 {
-    width: 70px;
-    background: url("../../image/2.png?__spriter") 0 200px;
-    background-size: 70px auto;
-    height: 10px;
+    margin: 10px;
+    width: 50px;
+    background: url("../../image/bag.png?__spriter") 0 0;
+    background-size: 50px auto;
+    height: 50px;
+    border: 3px solid black;
 }
 
 .image3 {
-    width: 70px;
-    background: url("../../image/3.png?__spriter") 0 200px;
-    background-size: 60px auto;
-    height: 10px;
+    margin: 10px;
+    width: 44px;
+    background: url("../../image/shop.png?__spriter") 0 0;
+    background-size: 44px auto;
+    height: 44px;
+    border: 3px solid black;
 }
