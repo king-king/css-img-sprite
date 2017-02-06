@@ -1,6 +1,6 @@
 {
   "name": "css-img-sprite",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "input css file,get new file and sprite image",
   "main": "index.js",
   "scripts": {

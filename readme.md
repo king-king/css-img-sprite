@@ -1,10 +1,13 @@
+![downloads](https://img.shields.io/npm/dm/css-img-sprite.svg)
+![license](https://img.shields.io/npm/l/css-img-sprite.svg)
+
+
 # Table
 1. [Install](#INSTALL)
 1. [Gulp Version](#Gulp_Version)
 1. [How To Write CSS](#How_To_Write_CSS)
 1. [How To Write JS](#How_To_Write_JS)
 1. [Example](#Example)
-
 
 
 # <a name="Install">Install</a>
