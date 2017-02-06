@@ -63,6 +63,8 @@
     1. **raw ( content , spriteObj )**
     1. **sprite ( spriteObj , callback )**
     1. **spriteSync ( spriteObj )**
+    
+* Arguments Guide
 ```javascript
 /**
  *  arguments:
