@@ -1,8 +1,8 @@
-# TABLE
+# Table
 1. [Install](#INSTALL)
-1. [Gulp Version](#Gulp Version)
-1. [How To Write CSS](#How To Write CSS)
-1. [How To Write JS](#How To Write JS)
+1. [Gulp Version](#Gulp_Version)
+1. [How To Write CSS](#How_To_Write_CSS)
+1. [How To Write JS](#How_To_Write_JS)
 1. [Example](#Example)
 
 
@@ -10,10 +10,10 @@
 # <a name="Install">Install</a>
 > npm install css-img-sprite
 
-# <a name="Gulp Version">Gulp Version</a>
+# <a name="Gulp_Version">Gulp Version</a>
 * Gulp : [gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
 
-# <a name="How To Write CSS">How To Write CSS</a>
+# <a name="How_To_Write_CSS">How To Write CSS</a>
 shop:
 ![shop](test/image/shop.png)
 bag:
@@ -87,7 +87,7 @@ after sprite:
 }
 ```
 
-# <a name="How To Write JS">How To Write JS</a>
+# <a name="How_To_Write_JS">How To Write JS</a>
 
 * API:
     1. **raw ( content , spriteObj )**
