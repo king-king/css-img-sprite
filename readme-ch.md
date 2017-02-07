@@ -82,12 +82,12 @@ bag:
 }
 ```
 * 如果图片放大比例不为1，且使用了repeat，则即便添加了'?__sprite'后缀也不会进行图片合成，如：
- ```css
- .image {
-     background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
-     background-size: 100px auto;
- }
- ```
+```css
+.image {
+    background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
+    background-size: 100px auto;
+}
+```
  
 * 支持background-size中的auto写法，如：
 ```css
