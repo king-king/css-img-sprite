@@ -67,7 +67,7 @@ new css file:
     background-position: 0px -47px
 }
 .image1, .image2 {
-    background-image: url(test/image/base_f4aff81c22_z.png)
+    background-image: url("test/image/base_f4aff81c22_z.png")
 }
 ```
 
