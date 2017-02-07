@@ -90,7 +90,7 @@ after sprite:
     background-size: auto auto;
 }
 ```
-<span style='color:red;border-left:3px solid #ddd'>important:we will not do anything about unsprite image.so you need to copy unsprite image into new folder.and you need to take care the folder structure because we will not change the unsprite image url in 'background-image'</span>
+<p style='color:red;border-left:3px solid #ddd'>important:we will not do anything about unsprite image.so you need to copy unsprite image into new folder.and you need to take care the folder structure because we will not change the unsprite image url in 'background-image'</p>
 
 # <a name="How_To_Write_JS">How To Write JS</a>
 
