@@ -1,7 +1,8 @@
 ![downloads](https://img.shields.io/npm/dm/css-img-sprite.svg)
 ![license](https://img.shields.io/npm/l/css-img-sprite.svg)
+![version](https://img.shields.io/npm/v/css-img-sprite.svg)
 
-[中文版](readme-ch.md)
+[[中文版]](readme-ch.md)
 
 # Table
 1. [Install](#INSTALL)
