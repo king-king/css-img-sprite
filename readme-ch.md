@@ -67,7 +67,7 @@ bag:
     background-position: 0px -47px
 }
 .image1, .image2 {
-    background-image: url(test/image/base_f4aff81c22_z.png)
+    background-image: url("test/image/base_f4aff81c22_z.png")
 }
 ```
 * 支持高度宽度同比例放大图片，放大倍数相同的图片会放到同一幅生成图里，如下面中shop和bag均放大了两倍，结果会放到同一张合成图中。
