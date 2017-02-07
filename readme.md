@@ -42,7 +42,34 @@ bag:
 }
 ```
 after sprite:
+new image:
 ![after](test/image/base_f4aff81c22_z.png)
+new css file:
+```css
+.image1 {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border: 3px solid black;
+    background-repeat: no-repeat;
+}
+.image2 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    background-repeat: no-repeat;
+}
+.image1 {
+    background-position: -6px 0px
+}
+.image2 {
+    background-position: 0px -47px
+}
+.image1, .image2 {
+    background-image: url(test/image/base_f4aff81c22_z.png)
+}
+```
 
 * you can scale the image by set background-size.we can put the same scale
  images into one output image.
