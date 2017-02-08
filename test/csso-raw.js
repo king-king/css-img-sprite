@@ -7,12 +7,12 @@ var csso = require( "gulp-csso" );
 var sprite = require( "../index" ).sprite;
 
 
-// gulp.src( "css/base1/base.css" , { base : "css" } )
+// gulp.src( "private/vender.css" , { base : "css" } )
 // 	.pipe( csso() )
-// 	.pipe( gulp.dest( "csso-css" ) );
+// 	.pipe( gulp.dest( "out/vender-css" ) );
 
 sprite( {
-	cssSrc : 'csso-css/base1/base.css' ,
+	cssSrc : 'private/vender.css' ,
 	cssDesDir : 'out' ,
 	imgDesDir : 'out'
 } , function () {
