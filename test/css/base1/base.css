@@ -1,8 +1,8 @@
 .image1 {
     width: 44px;
     height: 44px;
-    background-size: 100px auto;
-    background: red url("../../image/shop.png?__spriter") center center no-repeat;
+    /*background-size: 100px auto;*/
+    background: url("../../image/shop.png?__spriter") no-repeat;
     border: 3px solid black;
 }
 
@@ -13,7 +13,7 @@
     border: 3px solid black;
 }
 
-.image2 {
+.image3 {
     width: 70px;
     height: 80px;
     background: url("../../image/9.jpg?__spriter");
