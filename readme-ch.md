@@ -130,6 +130,7 @@ bag:
  *          [spriteObj.layout]:{string} "linear"(默认)|"matrix"，如果用了'matrix'，将采用bin-packing算法进行布局，
  *                                      保证图片面积尽可能小
  *          [spriteObj.hash]:{boolean} 为合并图添加hash标记，默认是不添加
+ *          [spriteObj.errLog]:{boolean} 如果有错误则将错误写到.spritelog文件内
  *      callback:{function} callback(err) 异步回调
  *  return:
  *      content:{buffer} css新文件的内容

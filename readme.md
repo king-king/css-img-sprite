@@ -141,6 +141,7 @@ new css file:
  *          [spriteObj.imgDesDir]:{string} image output dir,default:cssSrc
  *          [spriteObj.layout]:{string} "linear"(default)|"matrix".matrix will use bin-packing
  *          [spriteObj.hash]:{boolean} add hash flag on sprite image
+ *          [spriteObj.errLog]:{boolean} output err in .spritelog file
  *      callback:{function} callback(err)
  *  return:
  *      content:{buffer} new css file content
