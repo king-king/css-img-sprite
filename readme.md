@@ -3,6 +3,7 @@
 ![version](https://img.shields.io/npm/v/css-img-sprite.svg)
 
 [[中文版]](readme-ch.md)
+[[update log]](updatelog.md)
 
 # Table
 1. [Install](#INSTALL)
