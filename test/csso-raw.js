@@ -11,10 +11,10 @@ var sprite = require( "../index" ).sprite;
 // 	.pipe( csso() )
 // 	.pipe( gulp.dest( "out/vender-css" ) );
 
-sprite( {
-	cssSrc : 'private/vender.css' ,
-	cssDesDir : 'out' ,
-	imgDesDir : 'out'
-} , function () {
-	console.log( "end" );
-} );
+sprite({
+    cssSrc: 'private/vender.css',
+    cssDesDir: 'out',
+    imgDesDir: 'out'
+}, function () {
+    console.log("end");
+});
