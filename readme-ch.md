@@ -5,19 +5,23 @@
 [[English]](readme.md)
 
 # 目录
+
 1. [安装](#INSTALL)
 1. [Gulp版](#Gulp_Version)
 1. [CSS](#How_To_Write_CSS)
 1. [JavaScript](#How_To_Write_JS)
 1. [示例](#Example)
 
-# <a name="Install">安装</a>
+# <a name="Install">安装</a> 
+
 > npm install css-img-sprite
 
 # <a name="Gulp_Version">Gulp版</a>
+
 * Gulp : [gulp-css-img-sprite](https://github.com/king-king/gulp-css-img-sprite)
 
 # <a name="How_To_Write_CSS">CSS</a>
+
 在css中引用了两张未合并图片：
 shop:
 ![shop](test/image/shop.png)
@@ -25,6 +29,7 @@ bag:
 ![shop](test/image/bag.png)
 
 * 在url后附加 **?__sprite'**或**?__spriter**（防止拼错），告诉程序进行合并处理
+
 ```css
 .image1 {
     margin: 10px;
@@ -41,10 +46,12 @@ bag:
     border: 3px solid black;
 }
 ```
+
 合并完成后会得到这样的图片：
 ![after](test/image/base_f4aff81c22_z.png)
 
 同时会得到新的css文件内容：
+
 ```css
 .image1 {
     margin: 10px;
@@ -70,7 +77,9 @@ bag:
     background-image: url("test/image/base_f4aff81c22_z.png")
 }
 ```
+
 * 支持高度宽度同比例放大图片，放大倍数相同的图片会放到同一幅生成图里，如下面中shop和bag均放大了两倍，结果会放到同一张合成图中。
+
 ```css
 .image1 {
     background: url("test/image/shop.png?__spriter") 0 0;
@@ -81,15 +90,19 @@ bag:
      background-size:100px auto;
 }
 ```
+
 * 如果图片放大比例不为1，且使用了repeat，则即便添加了'?__sprite'后缀也不会进行图片合成，如：
+
 ```css
 .image {
     background: url("test/image/bag.png?__spriter") repeat-x 0 200px;
     background-size: 100px auto;
 }
 ```
+
  
 * 支持background-size中的auto写法，如：
+
 ```css
 .image1 {
     background: url("test/image/bag.png?__sprite") 0 0;
@@ -107,6 +120,16 @@ bag:
 }
 ```
 
+* 对background-position的支持情况：
+
+|支持写法|示例|使用场景|
+|:------|:----|:--------|
+|background-position: \d+px \d+px;|background-position: -9px -1px;|需要合并的图是一个合并了很多小图的图片|
+|background-position: left  \d+px;|background-position: left -11px;|需要合并的图片向左浮动|
+|background-position: right \d+px;|background-position: right -1px;|需要合并的图片向右浮动|
+|background-position: left top;|background-position: left top;|需要合并的图片向左浮动|
+|background-position: right top;|background-position: right top;|需要合并的图片向右浮动
+
 > 重要：需要注意的是，模块对于没有进行合并的图片不会做任何处理。你需要自己保证未合并图片拷贝到指定目录以及未合并图片的url
 
 
@@ -116,8 +139,9 @@ bag:
     1. **raw ( content , spriteObj )**
     1. **sprite ( spriteObj , callback )**
     1. **spriteSync ( spriteObj )**
-    
+
 * 参数说明：
+
 ```javascript
 /**
  *  arguments:
